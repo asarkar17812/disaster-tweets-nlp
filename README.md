@@ -13,6 +13,7 @@ The primary learning outcomes of this project includes:
 
 * The performance metrics listed below are the model's F1-score (closer to 1 is better) on the training set vs the validation set:
     * BERT and RoBERTa are initialized with random weights, hence the outcomes aren't determinstic
+
 | EPOCH | LSTM             | BERT             | RoBERTa          |
 | ----- | ---------------- | ---------------- | ---------------- |
 | 1     | 0.0288 vs 0.0271 | 0.7493 vs 0.7819 | 0.7386 vs 0.7788 |
