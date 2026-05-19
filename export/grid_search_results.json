@@ -1,0 +1,230 @@
+{
+  "split": {
+    "train": 5329,
+    "val": 1142,
+    "test": 1142,
+    "kaggle_submission": 3263,
+    "train_pos_rate": 0.429536498404954,
+    "val_pos_rate": 0.4299474605954466,
+    "test_pos_rate": 0.4299474605954466
+  },
+  "grids": {
+    "LSTM": {
+      "lr": [
+        0.0005,
+        0.001
+      ],
+      "hidden_dim": [
+        128,
+        256
+      ]
+    },
+    "Transformer": {
+      "base_lr": [
+        1e-05,
+        2e-05,
+        3e-05
+      ],
+      "layer_decay": [
+        0.9,
+        0.95
+      ]
+    },
+    "ensemble_weight_step": 0.05
+  },
+  "best_configs": {
+    "LSTM": {
+      "lr": 0.001,
+      "hidden_dim": 256
+    },
+    "BERTweet": {
+      "base_lr": 3e-05,
+      "layer_decay": 0.9
+    },
+    "RoBERTa": {
+      "base_lr": 1e-05,
+      "layer_decay": 0.95
+    }
+  },
+  "best_val_f1": {
+    "LSTM": 0.767268862911796,
+    "BERTweet": 0.8126315789473684,
+    "RoBERTa": 0.812957157784744
+  },
+  "all_trials": {
+    "LSTM": [
+      {
+        "config": {
+          "lr": 0.0005,
+          "hidden_dim": 128
+        },
+        "val_f1": 0.7636003956478734,
+        "elapsed_sec": 5.7
+      },
+      {
+        "config": {
+          "lr": 0.0005,
+          "hidden_dim": 256
+        },
+        "val_f1": 0.7613762486126526,
+        "elapsed_sec": 6.3
+      },
+      {
+        "config": {
+          "lr": 0.001,
+          "hidden_dim": 128
+        },
+        "val_f1": 0.756701030927835,
+        "elapsed_sec": 5.0
+      },
+      {
+        "config": {
+          "lr": 0.001,
+          "hidden_dim": 256
+        },
+        "val_f1": 0.767268862911796,
+        "elapsed_sec": 6.3
+      }
+    ],
+    "BERTweet": [
+      {
+        "config": {
+          "base_lr": 1e-05,
+          "layer_decay": 0.9
+        },
+        "val_f1": 0.7991587802313355,
+        "elapsed_sec": 30.9
+      },
+      {
+        "config": {
+          "base_lr": 1e-05,
+          "layer_decay": 0.95
+        },
+        "val_f1": 0.7918454935622318,
+        "elapsed_sec": 23.9
+      },
+      {
+        "config": {
+          "base_lr": 2e-05,
+          "layer_decay": 0.9
+        },
+        "val_f1": 0.805439330543933,
+        "elapsed_sec": 32.2
+      },
+      {
+        "config": {
+          "base_lr": 2e-05,
+          "layer_decay": 0.95
+        },
+        "val_f1": 0.8073770491803278,
+        "elapsed_sec": 31.8
+      },
+      {
+        "config": {
+          "base_lr": 3e-05,
+          "layer_decay": 0.9
+        },
+        "val_f1": 0.8126315789473684,
+        "elapsed_sec": 30.8
+      },
+      {
+        "config": {
+          "base_lr": 3e-05,
+          "layer_decay": 0.95
+        },
+        "val_f1": 0.8,
+        "elapsed_sec": 30.7
+      }
+    ],
+    "RoBERTa": [
+      {
+        "config": {
+          "base_lr": 1e-05,
+          "layer_decay": 0.9
+        },
+        "val_f1": 0.8068756319514662,
+        "elapsed_sec": 29.2
+      },
+      {
+        "config": {
+          "base_lr": 1e-05,
+          "layer_decay": 0.95
+        },
+        "val_f1": 0.812957157784744,
+        "elapsed_sec": 29.4
+      },
+      {
+        "config": {
+          "base_lr": 2e-05,
+          "layer_decay": 0.9
+        },
+        "val_f1": 0.8061224489795918,
+        "elapsed_sec": 29.3
+      },
+      {
+        "config": {
+          "base_lr": 2e-05,
+          "layer_decay": 0.95
+        },
+        "val_f1": 0.8116545265348595,
+        "elapsed_sec": 29.4
+      },
+      {
+        "config": {
+          "base_lr": 3e-05,
+          "layer_decay": 0.9
+        },
+        "val_f1": 0.8118609406952966,
+        "elapsed_sec": 29.4
+      },
+      {
+        "config": {
+          "base_lr": 3e-05,
+          "layer_decay": 0.95
+        },
+        "val_f1": 0.8117770767613038,
+        "elapsed_sec": 22.0
+      }
+    ]
+  },
+  "ensemble": {
+    "weights": {
+      "LSTM": 0.4,
+      "BERTweet": 0.2,
+      "RoBERTa": 0.4
+    },
+    "threshold": 0.5400000000000003,
+    "val_f1": 0.825531914893617,
+    "test_f1": 0.8188638799571275,
+    "test_acc": 0.852014010507881
+  },
+  "per_model_test": {
+    "LSTM": {
+      "test_f1": 0.7563559322033898,
+      "test_acc": 0.7985989492119089
+    },
+    "BERTweet": {
+      "test_f1": 0.8247639034627492,
+      "test_acc": 0.8537653239929948
+    },
+    "RoBERTa": {
+      "test_f1": 0.8310598111227702,
+      "test_acc": 0.8590192644483362
+    }
+  },
+  "per_model_val_thresholds": {
+    "LSTM": {
+      "threshold": 0.48000000000000026,
+      "val_f1": 0.7774294670846394
+    },
+    "BERTweet": {
+      "threshold": 0.5300000000000002,
+      "val_f1": 0.8161530286928799
+    },
+    "RoBERTa": {
+      "threshold": 0.5100000000000002,
+      "val_f1": 0.8134171907756813
+    }
+  },
+  "elapsed_grid_search_min": 6.2
+}

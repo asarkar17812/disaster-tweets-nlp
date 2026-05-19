@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import torch; print\\('torch:', torch.__version__\\); import transformers; print\\('transformers:', transformers.__version__\\); import sklearn; print\\('sklearn:', sklearn.__version__\\); import pandas; print\\('pandas:', pandas.__version__\\); print\\('cuda:', torch.cuda.is_available\\(\\)\\)\")",
+      "Bash(python -m pip list)",
+      "Bash(where python *)",
+      "Bash(where conda *)",
+      "Read(//c/Users/Ayush Sarkar/anaconda3/**)",
+      "Read(//c/Users/Ayush Sarkar/miniconda3/**)"
+    ]
+  }
+}
