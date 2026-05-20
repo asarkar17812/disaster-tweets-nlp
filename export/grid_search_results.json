@@ -59,7 +59,7 @@
           "hidden_dim": 128
         },
         "val_f1": 0.7636003956478734,
-        "elapsed_sec": 5.7
+        "elapsed_sec": 14.9
       },
       {
         "config": {
@@ -67,7 +67,7 @@
           "hidden_dim": 256
         },
         "val_f1": 0.7613762486126526,
-        "elapsed_sec": 6.3
+        "elapsed_sec": 6.0
       },
       {
         "config": {
@@ -75,7 +75,7 @@
           "hidden_dim": 128
         },
         "val_f1": 0.756701030927835,
-        "elapsed_sec": 5.0
+        "elapsed_sec": 4.8
       },
       {
         "config": {
@@ -83,7 +83,7 @@
           "hidden_dim": 256
         },
         "val_f1": 0.767268862911796,
-        "elapsed_sec": 6.3
+        "elapsed_sec": 5.9
       }
     ],
     "BERTweet": [
@@ -101,7 +101,7 @@
           "layer_decay": 0.95
         },
         "val_f1": 0.7918454935622318,
-        "elapsed_sec": 23.9
+        "elapsed_sec": 21.4
       },
       {
         "config": {
@@ -109,7 +109,7 @@
           "layer_decay": 0.9
         },
         "val_f1": 0.805439330543933,
-        "elapsed_sec": 32.2
+        "elapsed_sec": 28.3
       },
       {
         "config": {
@@ -117,7 +117,7 @@
           "layer_decay": 0.95
         },
         "val_f1": 0.8073770491803278,
-        "elapsed_sec": 31.8
+        "elapsed_sec": 28.1
       },
       {
         "config": {
@@ -125,7 +125,7 @@
           "layer_decay": 0.9
         },
         "val_f1": 0.8126315789473684,
-        "elapsed_sec": 30.8
+        "elapsed_sec": 28.3
       },
       {
         "config": {
@@ -133,7 +133,7 @@
           "layer_decay": 0.95
         },
         "val_f1": 0.8,
-        "elapsed_sec": 30.7
+        "elapsed_sec": 28.2
       }
     ],
     "RoBERTa": [
@@ -143,7 +143,7 @@
           "layer_decay": 0.9
         },
         "val_f1": 0.8068756319514662,
-        "elapsed_sec": 29.2
+        "elapsed_sec": 27.6
       },
       {
         "config": {
@@ -151,7 +151,7 @@
           "layer_decay": 0.95
         },
         "val_f1": 0.812957157784744,
-        "elapsed_sec": 29.4
+        "elapsed_sec": 27.1
       },
       {
         "config": {
@@ -159,7 +159,7 @@
           "layer_decay": 0.9
         },
         "val_f1": 0.8061224489795918,
-        "elapsed_sec": 29.3
+        "elapsed_sec": 28.1
       },
       {
         "config": {
@@ -167,7 +167,7 @@
           "layer_decay": 0.95
         },
         "val_f1": 0.8116545265348595,
-        "elapsed_sec": 29.4
+        "elapsed_sec": 28.0
       },
       {
         "config": {
@@ -175,7 +175,7 @@
           "layer_decay": 0.9
         },
         "val_f1": 0.8118609406952966,
-        "elapsed_sec": 29.4
+        "elapsed_sec": 27.9
       },
       {
         "config": {
@@ -183,7 +183,7 @@
           "layer_decay": 0.95
         },
         "val_f1": 0.8117770767613038,
-        "elapsed_sec": 22.0
+        "elapsed_sec": 20.3
       }
     ]
   },
@@ -226,5 +226,5 @@
       "val_f1": 0.8134171907756813
     }
   },
-  "elapsed_grid_search_min": 6.2
+  "elapsed_grid_search_min": 5.93
 }
